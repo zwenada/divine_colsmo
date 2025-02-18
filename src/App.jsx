@@ -6,9 +6,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
-import DashboardCharts from ".//admin/DashboardCharts";
-import UserList from "./admin/UserList";
-import AdminDashboard from "./admin/AdminDashboard";
+import AdminDash from "./admin/AdminDash";
 
 const App = () => {
   return (
@@ -40,13 +38,10 @@ const App = () => {
             path="/admin"
             element={
               <>
-                <AdminDashboard />
+                <AdminDash />
               </>
             }
-          >
-            <Route path="user" element={<UserList />} />
-            <Route path="chart" element={<DashboardCharts />} />
-          </Route>
+          ></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

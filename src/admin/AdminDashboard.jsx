@@ -7,7 +7,6 @@ import {
 } from "@ant-design/icons";
 import { Button, Layout, Menu, theme } from "antd";
 import { Link, Outlet } from "react-router-dom";
-import UserList from "./UserList";
 
 const { Header, Sider, Content } = Layout;
 

@@ -1,5 +1,5 @@
 import React from "react";
-const backgroundImage = "src/assents/aboutus_bg.jpg";
+const backgroundImage = "./public/aboutus_bg.jpg";
 
 const AboutUs = () => {
   return (

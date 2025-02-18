@@ -1,6 +1,6 @@
 import React from "react";
-const backgroundImage = "./assents/background.jpg";
-const backgroundImage_2 = "./assents/packages_bg.jpg";
+const backgroundImage = "./public/background.jpg";
+const backgroundImage_2 = "./public/packages_bg.jpg";
 
 const Header = () => {
   return (
