@@ -1,7 +1,7 @@
 import React from "react";
 import "./Components.css";
 import serviceImage1 from "/src/assets/service_1.jpg";
-import serviceImage2 from "/src/assets/service_2.jpg";
+import serviceImage2 from "/src/assets/service_3.jpg";
 import serviceImage3 from "/src/assets/tiger-Lily.jpg";
 import serviceImage4 from "/src/assets/lavender.jpg";
 import serviceImage5 from "/src/assets/full_moon.jpg";
