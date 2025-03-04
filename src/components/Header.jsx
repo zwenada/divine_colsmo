@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css";
 const backgroundImage = "./public/background.jpg";
 const backgroundImage_2 = "./public/packages_bg.jpg";
 

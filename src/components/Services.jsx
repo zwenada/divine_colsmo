@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css";
 import serviceImage1 from "/src/assets/service_1.jpg";
 import serviceImage2 from "/src/assets/service_3.jpg";
 import tarotImage1 from "/src/assets/tarot_1.jpg";

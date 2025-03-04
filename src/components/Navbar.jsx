@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css";
 import { Link } from "react-scroll";
 
 function Navbar() {

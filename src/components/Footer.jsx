@@ -1,4 +1,5 @@
 import React from "react";
+import "./Components.css";
 import { FacebookFilled } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faViber } from "@fortawesome/free-brands-svg-icons";

@@ -1,118 +1,76 @@
 import React from "react";
-import "./admin.css";
+import "./AdminDash.css";
 
 const AdminDash = () => {
   return (
-    <div className="container-fluid">
-      <div className="row g-0">
-        {/* Sidebar */}
-        <nav className="col-2 bg-light pe-3">
-          <h1 className="h4 py-3 text-center text-primary">
-            <i className="fas fa-ghost me-2"></i>
-            <span className="d-none d-lg-inline"> ADMIN </span>
-          </h1>
-          <div className="list-group text-center text-lg-start">
-            <span className="list-group-item disabled d-none d-lg-block">
-              <small>CONTROLS</small>
-            </span>
-            {[
-              { icon: "fa-home", label: "Dashboard", active: true },
-              { icon: "fa-users", label: "Users", badge: 20 },
-              { icon: "fa-chart-line", label: "Statistics" },
-              { icon: "fa-flag", label: "Reports" },
-            ].map((item, index) => (
-              <a
-                key={index}
-                href="#"
-                className={`list-group-item list-group-item-action ${
-                  item.active ? "active" : ""
-                }`}
-              >
-                <i className={`fas ${item.icon} me-2`}></i>
-                <span className="d-none d-lg-inline">{item.label}</span>
-                {item.badge && (
-                  <span className="d-none d-lg-inline badge bg-danger rounded-pill float-end">
-                    {item.badge}
-                  </span>
-                )}
-              </a>
-            ))}
+    <div className="admin-dashboard">
+      <div className="sidebar">
+        <h1 className="admin-title">ADMIN</h1>
+        <nav className="nav-menu">
+          <a href="#" className="active">Dashboard</a>
+          <a href="#">Users <span className="badge">20</span></a>
+          <a href="#">Statistics</a>
+          <a href="#">Reports</a>
+        </nav>
+      </div>
+      
+      <main className="main-content">
+        <nav className="top-nav">
+          <span className="nav-title">Admin Panel</span>
+          <div className="nav-icons">
+            <i className="fas fa-cog"></i>
+            <i className="fas fa-user-circle"></i>
           </div>
         </nav>
-
-        {/* Main Content */}
-        <main className="col-10 bg-secondary">
-          {/* Navbar */}
-          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="flex-fill"></div>
-            <div className="navbar nav">
-              <li className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
-                  <i className="fas fa-user-circle"></i>
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="#" className="dropdown-item">
-                      User Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="dropdown-item">
-                      Logout
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a href="#" className="nav-link">
-                  <i className="fas fa-cog"></i>
-                </a>
-              </li>
-            </div>
-          </nav>
-
-          {/* Alerts */}
-          <div className="container-fluid mt-3 p-4">
-            <div className="row mb-3">
-              <div className="col">
-                <div className="alert alert-info">
-                  <i className="fas fa-download me-2"></i>A new version of the
-                  admin dashboard is released. <a href="#">Download Now!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Stats */}
-          <div className="row mx-2">
-            <h2 className="h6 text-white-50">QUICK STATS</h2>
+        
+        <div className="stats-section">
+          <h2>Quick Stats</h2>
+          <div className="stats-container">
             {[
-              { value: "1,250", label: "Daily visitors" },
-              { value: "8,210", label: "Weekly visitors" },
-              { value: "12,560", label: "Monthly visitors" },
-              { value: "102,250", label: "Yearly visitors" },
+              { label: "Daily Visitors", count: "1,250" },
+              { label: "Weekly Visitors", count: "8,210" },
+              { label: "Monthly Visitors", count: "12,560" },
+              { label: "Yearly Visitors", count: "102,250" }
             ].map((stat, index) => (
-              <div key={index} className="col">
-                <div className="card mb-3">
-                  <div className="card-body p-2">
-                    <h3 className="card-title h2">{stat.value}</h3>
-                    <span className="text-success">
-                      <i className="fas fa-chart-line"></i> {stat.label}
-                    </span>
-                  </div>
-                </div>
+              <div className="stat-card" key={index}>
+                <h3>{stat.count}</h3>
+                <span>{stat.label}</span>
               </div>
             ))}
           </div>
-        </main>
-      </div>
-      <footer className="text-center py-4 text-muted">
-        &copy; Copyright 2023
-      </footer>
+        </div>
+        
+        <div className="data-section">
+          <h2>Data</h2>
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Age Group</th>
+                <th>Data</th>
+                <th>Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { id: 1, age: "20-30", data: "19%", icon: "fa-chart-pie" },
+                { id: 2, age: "30-40", data: "40%", icon: "fa-chart-bar" },
+                { id: 3, age: "40-50", data: "20%", icon: "fa-chart-line" },
+                { id: 4, age: "50+", data: "11%", icon: "fa-chart-pie" }
+              ].map((row) => (
+                <tr key={row.id}>
+                  <td>{row.id}</td>
+                  <td>{row.age}</td>
+                  <td>{row.data}</td>
+                  <td><i className={`fas ${row.icon}`}></i></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        
+        <footer className="footer">&copy; 2023 Admin Panel</footer>
+      </main>
     </div>
   );
 };

@@ -1,0 +1,238 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  section {
+    padding: 40px;
+  }
+  
+  /* Navbar background color */
+  .custom-navbar,
+  .offcanvas-header,
+  .offcanvas-body {
+    background-color: #2e0854; /* Darker Deep Purple */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .offcanvas-title {
+    font-family: "Cinzel Decorative", cursive;
+    color: #ffd700 !important; /* Gold */
+  }
+  
+  /* Logo color */
+  .custom-logo {
+    color: #ffd700 !important; /* Gold */
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .nav-item a {
+    font-family: "Roboto CondensedRoboto Condensed", serif;
+    color: #e0e0e0;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover {
+    color: #870690;
+    cursor: pointer;
+  }
+  
+  .hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: #ffd700; /* Gold */
+    font-family: "Cinzel Decorative", cursive;
+    margin-bottom: 20px;
+  }
+  
+  .tarot-title,
+  .goal-title,
+  .about-title,
+  .get-title {
+    padding-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffd700; /* Gold */
+    font-family: "Cinzel Decorative", cursive;
+  }
+  
+  .tarot-text,
+  .goal-text,
+  .about-text,
+  .get-text {
+    padding-bottom: 20px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: 400;
+    color: #ffd700;
+  }
+  
+  .card-container {
+    padding: 20px;
+    display: flex;
+    gap: 2px;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    border: 1px solid #49281a;
+    background-color: #49281a;
+    width: 300px;
+    padding: 5px;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+    gap: 10px;
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+    transition: top 0.4s ease-in-out;
+  }
+  
+  .card:hover .hover-text {
+    top: 0;
+    background-color: rgba(31, 1, 36, 0.7);
+    height: 100%;
+  }
+  
+  .daily-title {
+    font-family: "Roboto Condensed", serif;
+    font-size: 2rem;
+    color: #6a0572;
+    text-align: center;
+  }
+  
+  .daily-text {
+    font-family: "Roboto Condensed", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .weekly-title {
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.5rem;
+    color: #034c3c;
+    text-align: center;
+  }
+  
+  .weekly-text {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffd700;
+    padding: 20px;
+  }
+  
+  .services-title {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffd700;
+    font-family: "Cinzel Decorative", cursive;
+  }
+  
+  /* AboutUs.css */
+  .about-us {
+    margin-top: 3px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .col {
+    position: relative;
+  }
+  
+  .profile_card {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    z-index: 10;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .profile_overlay {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    background: yellow;
+    border: 2px solid brown;
+    animation: rotatedBg 12s infinite ease-in-out;
+  }
+  
+  @keyframes rotatedBg {
+    0%,
+    100% {
+      transform: rotate(11.163deg);
+    }
+  
+    50% {
+      transform: rotate(-11.163deg);
+    }
+  }
+  
+  .get-start-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .get-start-button {
+    font-family: "Roboto Condensed", serif;
+    padding: 10px 20px;
+    background-color: gold;
+    border: none;
+    border-radius: 5px;
+    color: purple;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .get-start-button:hover {
+    background-color: #b8860b; /* Darker gold shade */
+  }
+  
+  .footer {
+    background-color: #2e0854;
+  }
+  
+  .footer-text {
+    color: #e0e0e0;
+  }
+  
