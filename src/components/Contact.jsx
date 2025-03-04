@@ -2,12 +2,11 @@ import React from "react";
 import "./Components.css";
 import profileImage1 from "/src/assets/admin_1.jpg";
 import profileImage2 from "/src/assets/admin_2.jpg";
-const backgroundImage = "/aboutus_bg.jpg";
 
 const Contact = () => {
   return (
     <>
-      <section style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section style={{ backgroundImage: `url("/aboutus_bg.jpg")` }}>
         <div className="tarot-section overlay">
           <h1 className="tarot-title">Where Do I contact?</h1>
           <p className="tarot-text">
