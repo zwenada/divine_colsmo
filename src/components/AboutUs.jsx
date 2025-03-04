@@ -1,11 +1,10 @@
 import React from "react";
 import "./Components.css";
-const backgroundImage = "./public/aboutus_bg.jpg";
 
 const AboutUs = () => {
   return (
     <>
-      <section style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section style={{ backgroundImage: `url("/aboutus_bg.jpg")` }}>
         <div className="overlay">
           <div className="about-us">
             <h2 className="about-title">About Us</h2>

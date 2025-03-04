@@ -1,17 +1,18 @@
 import React from "react";
 import "./Components.css";
 import serviceImage1 from "/src/assets/service_1.jpg";
-import serviceImage2 from "/src/assets/service_3.jpg";
-import tarotImage1 from "/src/assets/tarot_1.jpg";
-import tarotImage2 from "/src/assets/tarot_2.jpg";
-import magicImage1 from "/src/assets/magic_candle.jpg";
-import runeImage2 from "/src/assets/rune.jpg";
-const backgroundImage = "./public/packages_bg.jpg";
+import serviceImage2 from "/src/assets/service_2.jpg";
+import serviceImage3 from "/src/assets/tiger-Lily.jpg";
+import serviceImage4 from "/src/assets/lavender.jpg";
+import serviceImage5 from "/src/assets/full_moon.jpg";
+import serviceImage6 from "/src/assets/deserk.jpg";
+import serviceImage7 from "/src/assets/black-hole.jpg";
+import serviceImage8 from "/src/assets/coral_reel.jpg";
 
 const Services = () => {
   return (
     <>
-      <section style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section style={{ backgroundImage: `url("/packages_bg.jpg")` }}>
         <h1 className="services-title overlay">
           Discover Insight and Guidance with Our Tarot Reading Services
         </h1>
@@ -38,7 +39,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage2} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -58,7 +59,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage3} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -78,7 +79,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage4} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -100,14 +101,14 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section style={{ backgroundImage: `url("/packages_bg.jpg")` }}>
         <h1 className="services-title overlay">
           living in the Universe, feel the energy flow and get Ritual
         </h1>
         <div className="card-container">
           <div className="row">
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage5} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -127,7 +128,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage6} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -147,7 +148,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage7} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -167,7 +168,7 @@ const Services = () => {
               </div>
             </div>
             <div className="card col-sm-6 col-lg-4 m-2">
-              <img src={serviceImage1} alt="" className="card-img-top" />
+              <img src={serviceImage8} alt="" className="card-img-top" />
 
               <div className="hover-text">
                 <ul className="weekly-text ">
@@ -189,7 +190,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <section style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <section style={{ backgroundImage: `url("/packages_bg.jpg")` }}>
         <div className="get-start-container overlay">
           <h2 className="get-title">Get Started with Tarot</h2>
           <p className="get-text">

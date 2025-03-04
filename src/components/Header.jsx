@@ -1,21 +1,18 @@
 import React from "react";
 import "./Components.css";
-const backgroundImage = "./public/background.jpg";
-const backgroundImage_2 = "./public/packages_bg.jpg";
-
 const Header = () => {
   return (
     <>
       <div
         className="hero-section"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url("/background.jpg")` }}
       >
         <div className="overlay">
           <h1 className="hero-title">Unlock the Secrets of the Universe</h1>
         </div>
       </div>
 
-      <section style={{ backgroundImage: `url(${backgroundImage_2})` }}>
+      <section style={{ backgroundImage: `url("/packages_bg.jpg")` }}>
         <div className="overlay">
           <div className="tarot-section ">
             <h1 className="tarot-title">What is Tarot?</h1>
