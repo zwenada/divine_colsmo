@@ -2,7 +2,7 @@ import React from "react";
 import "./Components.css";
 import profileImage1 from "/src/assets/admin_1.jpg";
 import profileImage2 from "/src/assets/admin_2.jpg";
-const backgroundImage = "./public/aboutus_bg.jpg";
+const backgroundImage = "/aboutus_bg.jpg";
 
 const Contact = () => {
   return (
