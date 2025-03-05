@@ -7,7 +7,7 @@ import serviceImage4 from "/src/assets/lavender.jpg";
 import serviceImage5 from "/src/assets/full_moon.jpg";
 import serviceImage6 from "/src/assets/deserk.jpg";
 import serviceImage7 from "/src/assets/black-hole.jpg";
-import serviceImage8 from "/src/assets/coral_reel.jpg";
+import serviceImage8 from "/src/assets/coral_reef.jpg";
 
 const Services = () => {
   return (
@@ -18,7 +18,7 @@ const Services = () => {
         </h1>
         <div className="card-container">
           <div className="row">
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage1} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -38,7 +38,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage2} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -58,7 +58,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage3} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -78,7 +78,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage4} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -107,7 +107,7 @@ const Services = () => {
         </h1>
         <div className="card-container">
           <div className="row">
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage5} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -127,7 +127,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage6} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -147,7 +147,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage7} alt="" className="card-img-top" />
 
               <div className="hover-text">
@@ -167,7 +167,7 @@ const Services = () => {
                 </ul>
               </div>
             </div>
-            <div className="card col-sm-6 col-lg-4 m-2">
+            <div className="card col-sm-6 col-lg-3 m-2">
               <img src={serviceImage8} alt="" className="card-img-top" />
 
               <div className="hover-text">
